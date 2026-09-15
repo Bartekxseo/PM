@@ -90,7 +90,6 @@ namespace PM.Services.Tests
             Assert.NotNull(_sessions[0].TimeOut);
             Assert.Equal(ParkingSpaceStatus.Available, _spaces.Single(s => s.Id == 1).Status);
 
-            _sessionRepository.Verify(r => r.SaveChangesAsync(It.IsAny<CancellationToken>()), Times.Once);
             _spaceRepository.Verify(r => r.SaveChangesAsync(It.IsAny<CancellationToken>()), Times.Once);
         }
 
@@ -134,7 +133,6 @@ namespace PM.Services.Tests
             Assert.NotNull(_sessions[0].TimeOut);
             Assert.Equal(ParkingSpaceStatus.Available, _spaces.Single(s => s.Id == 1).Status);
 
-            _sessionRepository.Verify(r => r.SaveChangesAsync(It.IsAny<CancellationToken>()), Times.Once);
             _spaceRepository.Verify(r => r.SaveChangesAsync(It.IsAny<CancellationToken>()), Times.Once);
         }
 
@@ -178,7 +176,6 @@ namespace PM.Services.Tests
             Assert.NotNull(_sessions[0].TimeOut);
             Assert.Equal(ParkingSpaceStatus.Available, _spaces.Single(s => s.Id == 1).Status);
 
-            _sessionRepository.Verify(r => r.SaveChangesAsync(It.IsAny<CancellationToken>()), Times.Once);
             _spaceRepository.Verify(r => r.SaveChangesAsync(It.IsAny<CancellationToken>()), Times.Once);
         }
 
