@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="PM.Core/PM.Core.csproj" />
+  <Project Path="PM.DataAccess/PM.DataAccess.csproj" />
+  <Project Path="PM.Server/PM.Server.csproj" />
+  <Project Path="PM.Services.Tests/PM.Services.Tests.csproj" Id="16055f19-1a78-465c-9372-2e3bf78bad62" />
+  <Project Path="PM.Services/PM.Services.csproj" />
+</Solution>
